@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ブック管理</title>
+     <link rel="stylesheet" href="{% static 'base.css' %}">
+</head>
+<body>
+ <nav>
+    <ul class="nav">
+        <li><a href="/" >ホームページ</a></li>
+        <li><a href="{% url 'add_book' %}" >新規ブック</a></li>
+    </ul>
+</nav>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
